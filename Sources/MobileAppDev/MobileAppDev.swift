@@ -2,7 +2,7 @@ import SwiftUI
 
 @available(iOS 14.0, *)
 public struct DevListView: View {
-    var developers = ["Tarek", "Tanvir", "Shakib","GMF"]
+    var developers = ["Tarek", "Tanvir", "Shakib","Fohad","Rana", "kamal"]
     public init(){
         
     }
