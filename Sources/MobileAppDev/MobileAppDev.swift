@@ -8,10 +8,16 @@ public struct DevListView: View {
     }
      
     public var body: some View {
-        Color.green
-        List(developers, id: \.self){ dev in
-            Text(dev)
-        }.frame(width: .infinity, height: 100)
+        ZStack {
+             
+            VStack {
+                List(developers, id: \.self){ dev in
+                    Text(dev)
+                        .listRowBackground(Color.green)
+                }
+                .background(.green)
+            }
+        }
         
         
     }
