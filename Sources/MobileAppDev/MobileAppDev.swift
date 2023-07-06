@@ -15,7 +15,6 @@ public struct DevListView: View {
                     Text(dev)
                         .listRowBackground(Color.green)
                 }
-                .background(.green)
             }
         }
         
