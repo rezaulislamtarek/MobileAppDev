@@ -21,8 +21,6 @@ let package = Package(
         .target(
             name: "MobileAppDev",
             dependencies: []),
-        .testTarget(
-            name: "MobileAppDevTests",
-            dependencies: ["MobileAppDev"]),
+         
     ]
 )

@@ -1,6 +1,24 @@
-public struct MobileAppDev {
-    public private(set) var text = "Hello, World!"
+import SwiftUI
 
-    public init() {
+@available(iOS 14.0, *)
+public struct DevListView: View {
+    var developers = ["Tarek", "Tanvir", "Shakib","GMF"]
+    public init(){
+        
+    }
+     
+    public var body: some View {
+        List(developers, id: \.self){ dev in
+            Text(dev)
+        }
+        
+        
+    }
+}
+
+@available(iOS 14.0, *)
+struct DevListView_Previews: PreviewProvider {
+    static var previews: some View {
+        DevListView()
     }
 }
